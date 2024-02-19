@@ -12,7 +12,8 @@ let sslMode: string | boolean = process.env.SSL || "require";
 
 if (sslMode === "false") sslMode = false;
 
-let connectionString = process.env.POSTGRES_URL!;
+let connectionString =
+  "postgresql://tolga:50LOjyzBJAKt@ep-falling-truth-a5bsyz5s.us-east-2.aws.neon.tech/neondb";
 
 const isDevContainer = process.env.REMOTE_CONTAINERS !== undefined;
 if (isDevContainer)
